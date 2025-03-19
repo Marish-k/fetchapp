@@ -47,26 +47,31 @@ function Fetch() {
 
   return (
     <>
-    <div className="menuBar">
-      <div className="add-user-button">
-        <Link to="/addUser">AddUser</Link>
-      </div>
-      <div className="add-user-button">
-        <Link to="/Coaches">Coaches</Link>
-      </div>
-      <div className="add-user-button">
-        <Link to="/booking">Bookings</Link>
-      </div>
+      <div className="menuBar">
+        <div className="add-user-button">
+          <Link to="/">Home</Link>
+        </div>
+        <div className="add-user-button">
+          <Link to="/Coaches">Coaches</Link>
+        </div>
+        <div className="add-user-button">
+          <Link to="/booking">Bookings</Link>
+        </div>
       </div>
       <div className="containers">
         {users.map((user) => (
           <div key={user.id} className="fetch-container">
             <h1>{user.name} </h1>
             <h2> ({user.id} )</h2>
-            Date Of Birth : {user.dateOfBirth}<br />
-            City : {user.city}<br />
-            PinCode : {user.pinCode}<br />
-            Gender : {user.gender}<br /><br />
+            Date Of Birth : {user.dateOfBirth}
+            <br />
+            City : {user.city}
+            <br />
+            PinCode : {user.pinCode}
+            <br />
+            Gender : {user.gender}
+            <br />
+            <br />
             <button onClick={() => handleSubmit(user.id)}>Edit</button>
             <button onClick={() => handleDelete(user.id)}>Delete</button>
           </div>

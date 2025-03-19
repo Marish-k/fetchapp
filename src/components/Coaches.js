@@ -35,7 +35,7 @@ function Coaches() {
         <Link to="/">Home</Link>
       </div>
       <div className="add-user-button">
-        <Link to="/addUser">AddUser</Link>
+        <Link to="/Users">Users</Link>
       </div>
       <div className="add-user-button">
         <Link to="/booking">Bookings</Link>

@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: linear-gradient(#662d8c, #ed1e79);
+  background-image: linear-gradient(#5d426e, #f55299);
   color: #f8f8f8; 
 }
 
@@ -15,13 +15,13 @@ code {
 }
 
 .menuBar {
-  background-color: #ed1e79;
+  background-color: #fc70ac;
   display: flex;
   justify-content: space-around;
-  padding: 10px;
+  padding: 5px;
   border-radius: 10px;
   position: relative;
-  width: 98.5%;
+  width: 99%;
 }
 
 .add-user-button {
@@ -119,4 +119,46 @@ code {
 
 .post-container button:hover {
   background-color: rgba(0, 100, 0, 0.8);
+}
+
+.Coach-container,
+.User-container,
+.booking-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  color: white;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(224, 221, 221, 0.5);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 40px auto; 
+  max-width: 300px;
+}
+
+.home-title {
+  text-align: center;
+  margin-top: 50px;
+}
+.container-wrapper {
+  display: flex;
+  max-height: 400px;
+  margin-bottom: 100%;
+}
+
+
+.Coach-container button,
+.User-container button ,
+.booking-container button{
+  width: 100%;
+  padding: 5px 15px;
+  margin: 10px auto;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff; /* Blue button */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }

@@ -6,6 +6,7 @@ import UserForm from "./components/post";
 import Update from "./components/update";
 import Coaches from "./components/Coaches";
 import Bookings from "./components/Bookings";
+import Home from "./components/home";
 
 
 
@@ -18,7 +19,8 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <BrowserRouter>
         <Routes>
-         <Route path='/' element={<Fetch/>}/>
+         <Route path='/' element={<Home/>}/>
+         <Route path='/users' element={<Fetch/>}/>
          <Route path='/addUser' element={<UserForm/>}/>
          <Route path="/updateUser/:id" element={<Update/>} />
          <Route path="/coaches" element={<Coaches/>} />
