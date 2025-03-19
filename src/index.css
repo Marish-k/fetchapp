@@ -1,13 +1,122 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(#662d8c, #ed1e79);
+  color: #f8f8f8; 
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.menuBar {
+  background-color: #ed1e79;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  border-radius: 10px;
+  position: relative;
+  width: 98.5%;
+}
+
+.add-user-button {
+  margin: 20px auto;
+  text-align: center;
+}
+
+.add-user-button a {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.add-user-button a:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+}
+
+.fetch-container {
+  padding: 1.25rem;
+  border: 1px solid rgba(224, 221, 221, 0.5);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 450px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.coach-container {
+  padding: 1.25rem; 
+  border: 1px solid rgba(224, 221, 221, 0.5);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 450px;
+  height: 300px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.fetch-container button {
+  padding: 0.75rem 1rem; 
+  font-size: 1rem; 
+  border-radius: 8px;
+  background-color: rgba(250, 235, 215, 0.5); /* Semi-transparent background */
+  border: none;
+  cursor: pointer;
+  margin: 1%;
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.fetch-container button:hover {
+  background-color: rgba(250, 235, 215, 0.8);
+}
+
+.containers {
+  margin-top: 50px; /* Reduced margin */
+  display: flex;
+  justify-content: space-evenly;
+  min-height: 100vh; /* Use min-height */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  gap: 20px;
+}
+
+.post-container {
+  padding: 1.25rem; /* Use rem units */
+  border: 1px solid rgba(224, 221, 221, 0.5);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px; /* Use max-width */
+  margin: 5% auto; /* Centered with auto margins */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.post-container input,
+.post-container select {
+  width: 100%; /* Full width */
+  padding: 0.75rem; /* Use rem units */
+  border-radius: 8px;
+  margin-bottom: 1rem; /* Use rem units */
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-sizing: border-box; /* Include padding in width */
+}
+
+.post-container button {
+  margin-top: 20px;
+  background-color: rgba(0, 128, 0, 0.8); /* Semi-transparent green */
+  padding: 0.75rem 1.5rem; /* Use rem units */
+  border-radius: 12px;
+  width: auto; /* Auto width */
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.post-container button:hover {
+  background-color: rgba(0, 100, 0, 0.8);
 }
