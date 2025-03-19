@@ -19,7 +19,7 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <BrowserRouter>
         <Routes>
-         <Route path='/' element={<Home/>}/>
+         <Route path='/fetchapp' element={<Home/>}/>
          <Route path='/users' element={<Fetch/>}/>
          <Route path='/addUser' element={<UserForm/>}/>
          <Route path="/updateUser/:id" element={<Update/>} />
